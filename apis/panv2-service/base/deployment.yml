@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "panv2-service"
+spec:
+  selector:
+    matchLabels:
+      app_name: "panv2-service"
+  template:
+    metadata:
+      annotations:
+        openfeature.dev/enabled: "true"
+        openfeature.dev/featureflagsource: "flaghouse/panv2-service-flagsource"
+      labels:
+        app_name: "panv2-service"
+    spec:
+      restartPolicy: Always
+      imagePullSecrets: []
+      hostAliases: []
+      containers:
+      - name: "panv2-service"
+        image: signzy/panv2-service
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 52216
+          protocol: TCP
