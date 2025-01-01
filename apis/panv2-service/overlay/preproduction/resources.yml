@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "panv2-service-new"
+  namespace: apis
+spec:
+  template:
+    spec:
+      containers:
+      - name: "panv2-service-new"
+        resources:
+          requests:
+            cpu: 128m
+            memory: 256Mi
+          limits:
+            cpu: 1024m
+            memory: 2048Mi
