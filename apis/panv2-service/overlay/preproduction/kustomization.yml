@@ -1,0 +1,11 @@
+bases:
+  - ../../base
+
+patchesStrategicMerge:
+  - env.yaml
+  - hostaliases.yml
+  - resources.yml
+  - hpa.yml
+
+commonLabels:
+  env: preproduction
