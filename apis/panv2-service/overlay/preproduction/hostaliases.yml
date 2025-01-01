@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "panv2-service"
+spec:
+  template:
+    spec:
+      hostAliases:
+      - ip: 0.0.0.0
+        hostnames: 
+        - api.prv
