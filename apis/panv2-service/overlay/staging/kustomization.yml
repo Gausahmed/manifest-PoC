@@ -1,12 +1,11 @@
 resources:
   - ../../base
+  - hpa.yml
 
 patchesStrategicMerge:
-  - env.yaml
-  - hostaliases.yml
+  - env.yml
   - resources.yml
-  - hpa.yml
 
 commonLabels:
   env: staging
-  app_name: "panv2-service-new"
+  app_name: "panv2-service"

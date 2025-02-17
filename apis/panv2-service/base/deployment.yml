@@ -15,7 +15,14 @@ spec:
         app_name: "panv2-service"
     spec:
       restartPolicy: Always
-      imagePullSecrets: []
+      imagePullSecrets:
+      - name: docker-hub-token1
+      - name: docker-hub-token2
+      - name: dockerhubsignzy
+      - name: dockerhubsignzy2
+      - name: docker-hub-token7
+      - name: docker-hub-token8
+      - name: docker-hub-token9
       hostAliases: []
       containers:
       - name: "panv2-service"

@@ -1,10 +1,10 @@
 resources:
   - deployment.yml
   - service.yml
-  - image-pull-secrets.yml
+  # - image-pull-secrets.yml
 
 commonLabels:
-  app_name: panv2-service-new
+  app_name: panv2-service
 
 namespace: apis
 # # You can define environment-specific patches here if needed

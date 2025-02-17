@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "panv2-service-new"
+  name: "panv2-service"
   namespace: apis
 spec:
   template:
     spec:
       containers:
-      - name: "panv2-service-new"
+      - name: "panv2-service"
         resources:
           requests:
             cpu: 128m

@@ -5,36 +5,3 @@ metadata:
 spec:
   template:
     spec:
-      hostAliases:
-      - ip: 0.0.0.0
-        hostnames: 
-        - api.prv
-      - ip: 172.16.162.2
-        hostnames: 
-        - staging.signzy.xyz
-        - staging2.signzy.xyz
-        - staging-persist.signzy.tech
-        - staging2-persist.signzy.tech
-        - ricera.development.signzy.tech
-        - ricera-console.development.signzy.tech
-      - ip: 172.16.162.7
-        hostnames: 
-        - mongo.prv
-        - mongo1.prv
-        - mysql.prv
-        - mysql1.prv
-        - search.prv
-        - quota.prv
-        - postgres.prv
-      - ip: 172.16.162.18
-        hostnames: 
-        - mongo2.prv
-      - ip: 172.16.162.26
-        hostnames: 
-        - mongo3.prv
-      - ip: 172.16.162.8
-        hostnames: 
-        - redis.prv
-      - ip: 164.52.196.130
-        hostnames: 
-        - log.prv
